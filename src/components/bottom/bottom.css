@@ -1,0 +1,29 @@
+/*нижниий контент*/
+.bottom {
+  white-space:nowrap;
+  transition: all .6s;
+}
+.bottom.v-state_1 {
+  transform: translate3d(-1024px, 0, 0)
+}
+.bottom.v-state_2 {
+  transform: translate3d(-2048px, 0, 0)
+}
+
+.bottom-content{
+  display: inline-block;
+  vertical-align: top;
+}
+.bottom-content.one {
+  width: 1024px;
+  background: url(../img/3_1.png) 100% 100% no-repeat,
+              url(../img/tab-1988.png) 100% 100% no-repeat;
+}
+.bottom-content.two {
+  background: url(../img/3_2.png) 100% 100% no-repeat,
+              url(../img/tab-2009.png) 100% 100% no-repeat;
+}
+.bottom-content.three {
+  background: url(../img/3_3.png) 100% 100% no-repeat,
+              url(../img/tab-2016.png) 100% 100% no-repeat;
+}

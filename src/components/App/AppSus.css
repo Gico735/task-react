@@ -1,0 +1,84 @@
+  /*шрифты*/
+@font-face {
+  font-family: "GothamProLight";
+  src: url(../fonts/GothamProLight/GothamProLight.eot);
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+  url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html, body, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: "GothamProLight";
+  color: white;
+  vertical-align: baseline
+}
+
+h1 {
+  margin: 0
+}
+
+.wrapper {
+background: url("../img/testCopy.png") 100% 100% no-repeat;
+background-size: 100%;
+&.state_0 {
+    .next,
+    .arrow {
+      display: block
+    }
+  }
+  &.state_1 {
+    .wrapper {
+      transform: translate3d(0, -768px, 0)
+    }
+  }
+  &.state_2 {
+    .wrapper {
+      transform: translate3d(0, -1536px, 0)
+    }
+  }
+  .pagination {
+    position: fixed;
+    right: 27px;
+    top: cacl(50%-31px);
+    .pagination-circle {
+      width: 13px;
+      height: 13px;
+      margin-bottom: 6px;
+      border-radius: 50%;
+      background-color: white;
+      transition: all .6s;
+    }
+    &.state_0 {
+      .pagination__dot:nth-child(1) {
+        background-color: #f78b1f;
+      }
+    }
+    &.state_1 {
+      .pagination__dot:nth-child(2) {
+        background-color: #f78b1f;
+      }
+    }
+    &.state_2 {
+      .pagination__dot:nth-child(3) {
+        background-color: #f78b1f;
+      }
+    }
+  }
+  .container {
+    height: 768px;
+    position: relative;
+    &#one {
+      background: url(../img/tab-top.png) 100% 100% no-repeat;
+      background-position: left 42px top 27px;
+    }
+    &#two {
+      background: url(../img/test.png) 100% 100% no-repeat;
+    }
+  }
+}

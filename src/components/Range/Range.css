@@ -1,0 +1,52 @@
+/*ползунок*/
+.range {
+  position: relative;
+  background: rgba(209, 234, 255, .3);
+  left: calc(391px/2);
+  bottom: 50px;
+  width: calc(1232px/2);
+  height: 10px;
+}
+
+
+
+.noUi-state-tap .noUi-origin {
+  transition: all .3s;
+}
+.noUi-state-tap .noUi-connect {
+  transition: all .3s;
+}
+
+.noUi-base {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  /* Fix 401 */
+}
+.noUi-connect {
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background-color: #d1eaff;
+}
+.noUi-origin {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.noUi-handle {
+  position: relative;
+  z-index: 1;
+  width: 43.5px;
+  height: 55.5px;
+  background: url('../img/range_thumb.png') 0 0 no-repeat;
+  top: -20px;
+  left: -20px;
+  margin-left: 618px;
+}
