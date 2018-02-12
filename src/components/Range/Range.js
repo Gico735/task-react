@@ -20,15 +20,14 @@ class Range extends Component {
         let newValue = Math.round(values)
         range.noUiSlider.set(newValue);
         this.props.setVState(Math.round(newValue));
-    })
+      })
   }
 
-  
     render() {
       return (
         <div className="range"></div>
       )
     }
-  }
+}
 
   export default Range
